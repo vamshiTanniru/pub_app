@@ -33,6 +33,8 @@ df['Distance']=dist
 #Asking user that how many nearest Pub they want to see
 nearest=st.slider(label="How Many Nearest Pub You Want to See",
                    min_value=1, max_value=50, value=5)
+
+
 data=df.sort_values(by='Distance', ascending=True)[:nearest]
 
 #List of Bar Names
